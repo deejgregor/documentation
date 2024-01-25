@@ -2332,8 +2332,7 @@ main:
     parent: tracing_troubleshooting
     weight: 1306
   - name: Correlated Logs
-    url: >-
-      tracing/troubleshooting/correlated-logs-not-showing-up-in-the-trace-id-panel
+    url: tracing/troubleshooting/correlated-logs-not-showing-up-in-the-trace-id-panel
     identifier: tracing_troubleshooting_correlated_logs
     parent: tracing_troubleshooting
     weight: 1307
@@ -8910,6 +8909,118 @@ api:
         - AggregateCIAppTestEvents
       unstable: []
       order: 3
+  - name: Cases
+    url: /api/latest/cases/
+    identifier: cases
+    generated: true
+  - name: Unassign case
+    url: '#unassign-case'
+    identifier: cases-unassign-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - UnassignCase
+      unstable: []
+      order: 4
+  - name: Unarchive case
+    url: '#unarchive-case'
+    identifier: cases-unarchive-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - UnarchiveCase
+      unstable: []
+      order: 4
+  - name: Update case status
+    url: '#update-case-status'
+    identifier: cases-update-case-status
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - UpdateStatus
+      unstable: []
+      order: 4
+  - name: Update case priority
+    url: '#update-case-priority'
+    identifier: cases-update-case-priority
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - UpdatePriority
+      unstable: []
+      order: 4
+  - name: Assign case
+    url: '#assign-case'
+    identifier: cases-assign-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - AssignCase
+      unstable: []
+      order: 4
+  - name: Archive case
+    url: '#archive-case'
+    identifier: cases-archive-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - ArchiveCase
+      unstable: []
+      order: 4
+  - name: Get the details of a case
+    url: '#get-the-details-of-a-case'
+    identifier: cases-get-the-details-of-a-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - GetCase
+      unstable: []
+      order: 3
+  - name: Create a case
+    url: '#create-a-case'
+    identifier: cases-create-a-case
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - CreateCase
+      unstable: []
+      order: 2
+  - name: Get a list of cases
+    url: '#get-a-list-of-cases'
+    identifier: cases-get-a-list-of-cases
+    parent: cases
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - SearchCases
+      unstable: []
+      order: 1
   - name: Cloud Cost Management
     url: /api/latest/cloud-cost-management/
     identifier: cloud-cost-management
@@ -10418,6 +10529,22 @@ api:
         - ListProcesses
       unstable: []
       order: 1
+  - name: Projects
+    url: /api/latest/projects/
+    identifier: projects
+    generated: true
+  - name: Get the details of a project
+    url: '#get-the-details-of-a-project'
+    identifier: projects-get-the-details-of-a-project
+    parent: projects
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - GetProject
+      unstable: []
+      order: 10
   - name: RUM
     url: /api/latest/rum/
     identifier: rum
